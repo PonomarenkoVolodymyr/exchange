@@ -1,0 +1,64 @@
+.changerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  margin-bottom: 50px;
+}
+
+.centerLine {
+  position: relative;
+  width: 70%;
+  height: 50px; /* Высота вашего блока */
+  background-color: #fff; /* Цвет блока */
+}
+
+.centerLine::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #b5b2b2; /* Цвет полоски */
+  transform: translateY(-50%);
+}
+
+.iamgeContainer {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 auto;
+  transition: 0.3s;
+}
+
+.imageContainer:hover {
+  cursor: pointer;
+  scale: 1.2;
+}
+.changerImage {
+  scale: 1.2;
+  border-radius: 50%;
+  transition: transform 0.5s ease-in-out;
+}
+.clicked {
+  transform: rotate(180deg);
+}
+@media (max-width: 800px) {
+  .changerContainer {
+    margin: 15px;
+  }
+  .changerImage {
+    scale: 0.9;
+  }
+}
+@media (max-width: 500px) {
+  .changerContainer {
+    margin-bottom: 5px;
+  }
+  .changerImage {
+    scale: 0.8;
+  }
+}
