@@ -3,7 +3,7 @@
 
   justify-content: center;
   height: 100vh; /* 100% высоты окна браузера */
-  background: linear-gradient(to bottom, #eaeafe, #ddf6f3);
+  background: linear-gradient(to bottom, #e3e3fd, #d7faf6);
 }
 
 .main {

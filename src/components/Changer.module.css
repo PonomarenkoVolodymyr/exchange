@@ -42,6 +42,7 @@
   scale: 1.2;
   border-radius: 50%;
   transition: transform 0.5s ease-in-out;
+  z-index: 9;
 }
 .clicked {
   transform: rotate(180deg);

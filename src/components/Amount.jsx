@@ -46,9 +46,9 @@ const Amount = ({ amountInputChange }) => {
         value={selectedCurrency}
         onChange={handleAmountSelectChange}
       >
-        <option value="UAH">UAH Гривня</option>
-        <option value="EUR">EUR Евро</option>
-        <option value="USD">USD Доллар</option>
+        <option value="UAH">UAH&nbsp;&nbsp;&nbsp;Гривня&nbsp;</option>
+        <option value="EUR">EUR&nbsp;&nbsp;&nbsp;Євро&nbsp;</option>
+        <option value="USD">USD&nbsp;&nbsp;&nbsp;Долар&nbsp;</option>
       </select>
       <div className={styles.input_box}>
         <input
